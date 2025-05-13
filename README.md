@@ -51,26 +51,26 @@ pip install iopaint
 iopaint run --model=lama --device=cpu --image=dataset/kinds/defect_kind/images/train --mask=dataset/kinds/defect_kind/mask/train --output=dataset/kinds/defect_kind/inpaint/train
 ```
 ## Running
-Set file list of dataset:
+- Set file list of dataset:
 ```bash
 python scripts/flist2.py --path ./dataset/
 ```
-Set the configuration file, refer to checkpoints/exposed_copper/config.yml
+- Set the configuration file, refer to checkpoints/exposed_copper/config.yml
 ### Training
-Train the edge generation block:
+- Train the edge generation block:
 ```bash
 python train.py --model 1 --checkpoints ./checkpoints/exposed_copper/
 ```
-Train the defect generation module:
+- Train the defect generation module:
 ```bash
 python train.py --model 3 --checkpoints ./checkpoints/exposed_copper/
 ```
 ### Testing
-Generate defect edge:
+- Generate defect edge:
 ```bash
 python test.py --model 1 --checkpoints ./checkpoints/exposed_copper/
 ```
-Generate defect:
+- Generate defect:
 ```bash
 python test.py --model 3 --checkpoints ./checkpoints/exposed_copper/
 ```
@@ -79,9 +79,11 @@ python test.py --model 3 --checkpoints ./checkpoints/exposed_copper/
 python ./scripts/metrics.py --data datasets/kind/exposed_copper/test --output ./checkpoints/exposed_copper/result
 ```
 ## Acknowledgments
-This project is developed based on the [EC](https://github.com/knazeri/edge-connect.git) and [LaMa](https://github.com/advimman/lama) projects. We sincerely appreciate their outstanding work.
+- This project is developed based on the [EC](https://github.com/knazeri/edge-connect.git) and [LaMa](https://github.com/advimman/lama) projects. We sincerely appreciate their outstanding work.
+
+- We also thank our lab for the support and welcome you to visit our [lab](https://github.com/luojxscut/LABCODE) to gain more industrial intelligence projects.
 ## Citation
-If you found our work helpful, please consider citing our papers <a href="https://doi.org/10.1007/s11760-025-03987-y">Mask inpainting-based data generation architecture for surface defect images with complex backgrounds</a> :
+- If you found our work helpful, please consider citing our papers <a href="https://doi.org/10.1007/s11760-025-03987-y">Mask inpainting-based data generation architecture for surface defect images with complex backgrounds</a> :
 
 ```
 @InProceedings{Luo_2025_MIDG,
@@ -92,7 +94,7 @@ If you found our work helpful, please consider citing our papers <a href="https:
 }
 ```
 ## Generation Results:
-This section showcases some generation results of the project.
+- This section showcases some generation results of the project.
 
 Comparison with excellent image inpainting methods:
 <p align='center'>  
