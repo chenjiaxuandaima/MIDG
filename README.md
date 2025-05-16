@@ -89,7 +89,7 @@ python ./scripts/metrics.py --data datasets/kind/exposed_copper/test --output ./
 @InProceedings{Luo_2025_MIDG,
   title = {Mask inpainting-based data generation architecture for surface defect images with complex backgrounds},
   author = {Jiaxiang Luo,Jiaxuan Chen},
-  journal={Signal, Image and Video Processing},
+  journal= {Signal, Image and Video Processing},
   year = {2025},
   volume = {19},
   number = {5},
