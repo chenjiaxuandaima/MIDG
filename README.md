@@ -90,7 +90,12 @@ python ./scripts/metrics.py --data datasets/kind/exposed_copper/test --output ./
   title = {Mask inpainting-based data generation architecture for surface defect images with complex backgrounds},
   author = {Jiaxiang Luo,Jiaxuan Chen},
   journal={Signal, Image and Video Processing},
-  year = {2025}
+  year = {2025},
+  volume = {19},
+  number = {5},
+  pages = {405},
+  DOI = {10.1007/s11760-025-03987-y},
+  type = {Journal Article}
 }
 ```
 ## Generation Results:
